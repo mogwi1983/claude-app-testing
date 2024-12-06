@@ -8,21 +8,59 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
         }
-        h1 {
-            color: #333;
+        nav {
+            background: #333;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #f5f5f5;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <div class="container">
         <h1>Welcome to Claude Test Page</h1>
-        <p>This is a simple test page created by Claude.</p>
+        <div class="section" id="about">
+            <h2>About Us</h2>
+            <p>This is an enhanced version of our test page with more content and better styling.</p>
+        </div>
+        <div class="section">
+            <h2>Our Services</h2>
+            <p>We provide various services including web development and design.</p>
+        </div>
     </div>
+    <footer>
+        <p>Contact us: contact@example.com | Phone: (555) 123-4567</p>
+    </footer>
 </body>
 </html>
